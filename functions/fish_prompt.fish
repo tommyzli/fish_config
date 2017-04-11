@@ -54,6 +54,10 @@ function fish_prompt
         echo -n '['
         set_color normal
         echo -n $branch
+        set -l dirtyIndex (git diff-index --quiet HEAD --)
+        if test $status -ne 0
+            echo -n '*'
+        end
         set_color -o green
         echo -n ']'
     end
