@@ -1,3 +1,5 @@
+# Modified from the nim.fish prompt: https://github.com/nim65s/dotfiles/
+
 function fish_prompt
     and set retc green; or set retc red
     tty|grep -q tty; and set tty tty; or set tty pts
