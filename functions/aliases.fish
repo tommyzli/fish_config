@@ -1,7 +1,2 @@
 # git stuff
-alias gs="git status"
-alias gcm="git commit"
-alias gd="git diff"
-alias gco="git checkout"
-alias gp="git push"
-alias ga="git add"
+alias glog="git log --decorate --graph --format='%C(yellow)%h%Creset %Cred%d%Creset %s %Cgreen%an%Creset (%C(cyan)%ar%Creset)'"
